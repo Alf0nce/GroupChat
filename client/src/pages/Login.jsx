@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import { registerUser } from "../services/backendint";
+import axios from "axios";
 
 export default function Login({ setUser }){
     const [username, setUsername] = useState("");
